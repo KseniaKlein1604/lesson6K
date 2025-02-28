@@ -31,7 +31,7 @@ def alert_danger(self):
      return alert_danger
 
 def alert_success(self):
-    allert_success = self._driver.find_elements(By.CSS_SELECTOR, 'div.alert.py-2.alert-success')
+    alert_success = self._driver.find_elements(By.CSS_SELECTOR, 'div.alert.py-2.alert-success')
     for form in alert_success:
         return form.value_of_css_property("background-color")
     
